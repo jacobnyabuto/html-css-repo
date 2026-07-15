@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <h2>Contact Us</h2>
+
+    <form action="#" method="post">
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label><br>
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required>
+        <br><br>
+
+        <!-- Topic Dropdown -->
+        <label for="topic">Topic:</label><br>
+        <select id="topic" name="topic">
+            <option value="">-- Select a Topic --</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <!-- Preferred Contact Method -->
+        <label>Preferred Contact Method:</label><br>
+
+        <input
+            type="radio"
+            id="contactEmail"
+            name="contactMethod"
+            value="Email">
+        <label for="contactEmail">Email</label><br>
+
+        <input
+            type="radio"
+            id="contactPhone"
+            name="contactMethod"
+            value="Phone">
+        <label for="contactPhone">Phone</label>
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Options:</label><br>
+
+        <input
+            type="checkbox"
+            id="newsletter"
+            name="options"
+            value="Newsletter">
+        <label for="newsletter">Subscribe to Newsletter</label><br>
+
+        <input
+            type="checkbox"
+            id="updates"
+            name="options"
+            value="Updates">
+        <label for="updates">Receive Product Updates</label>
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label><br>
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Write your message here"></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
